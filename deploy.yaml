@@ -1,6 +1,6 @@
 ---
 -  name: update
-   hosts: windows
+   hosts: Windows
    gather_facts: false
    
    vars_files:

@@ -2,9 +2,6 @@
 -  name: update
    hosts: Windows
    gather_facts: false
-   
-   vars_files:
-   - /etc/ansible/group_vars/windows
 
    tasks:
      - name: update

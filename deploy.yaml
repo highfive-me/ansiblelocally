@@ -1,0 +1,16 @@
+---
+-  name: update
+   hosts: windows
+   gather_facts: false
+   
+   vars_files:
+   - /etc/ansible/group_vars/windows
+
+   tasks:
+     - name: update
+       win_updates: 
+         category_names:
+           - SecurityUpdates
+         state: installed
+         reboot: yes
+         reboot_timeout: 900

@@ -10,5 +10,6 @@
            - SecurityUpdates
          state: installed
          register: update_results
+     - name: reboot if needed
        win_reboot:
          when: update_result.reboot_required
